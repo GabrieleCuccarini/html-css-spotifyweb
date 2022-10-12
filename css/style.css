@@ -23,7 +23,7 @@ body {
 }
 
 .bottom-navbar {
-    flex-shrink: 0;
+    display: flex;
     height: 90px;
 }
 
@@ -110,7 +110,9 @@ body {
 }
 
 .sidebar-container-bottom {
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: .6rem;
 }
 
@@ -118,12 +120,12 @@ body {
     align-items: center;
 }
 
-.mini-sidebar-container .text-sidebar {
-    margin-left: 10px;
+.mini-sidebar-container img {
+    width: 20px;
 }
 
-.irregular-icon {
-    font-size: 10px
+.mini-sidebar-container .text-sidebar {
+    margin-left: 10px;
 }
 
 .circle {
@@ -136,4 +138,21 @@ body {
 hr {
     margin: 5px 0;
     width: 90%;
+}
+
+/* SOPRA QUESTO COMMENTO METTERE LE CARATTERISTICHE DEL MAIN */
+
+.footer-container-left {
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+}
+
+.icon-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-footer img {
+    width: 2rem;
 }
