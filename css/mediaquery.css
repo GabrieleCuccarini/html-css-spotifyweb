@@ -1,7 +1,7 @@
-/* Medium */
+/* SMALL*/
 @media screen and (min-width: 568px) {
     .sidebar {
-        width: 260px;
+        width: 200px;
     }
 
     .sidebar .playlist {
@@ -11,6 +11,10 @@
     .lista-sidebar-top a {
         display: flex;
         padding: .6rem;
+        justify-content: flex-start;
+    }
+
+    .mini-sidebar-container {
         justify-content: flex-start;
     }
 
@@ -26,17 +30,26 @@
         display: block;
     }
 
+    .logo-sidebar img {
+        width: 90%;
+    }
+
     .sidebar .text-sidebar {
         display: block;
     }
+
+    hr {
+        opacity: 0;
+    }
+    
 }
 
-/* Large */
+/*MEDIUM*/
 @media screen and (min-width: 768px) {
 
 }
 
-/* Extra-Large*/
+/*LARGE*/
 @media screen and (min-width: 992px) {
     
 }

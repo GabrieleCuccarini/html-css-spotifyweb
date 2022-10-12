@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaquery.css">
 </head>
@@ -17,53 +18,70 @@
         <div class="sidebar">
             <!-- width fissa e shrink 0, gli elementi interni
                 prendono shrink 0 per difendersi dalla playlist che ha grow 1
-                Le icone sono link. La struttura dovrebbe essere ul, li e in ogni-->
+                Le icone sono link. La struttura dovrebbe essere ul, li, a e 2 cont-->
+            
+                <!-- SIDEBAR TOP -->
             <div class="sidebar-container-top no-shrink">
                 <ul class="lista-sidebar-top">
                     <li>
                         <a class="logo-sidebar">
-                            <img class="logo-small" src="" alt="">
-                            <img class="logo-large" src="" alt="">
+                            <img class="logo-small" src="./img/logo-small.svg" alt="">
+                            <img class="logo-large" src="./img/logo.svg" alt="">
                         </a>                      
                     </li>
                     <li>
                         <a>
-                            <div class="li-icon">Icon</div>
-                            <div class="text-sidebar">Testo test</div>
+                            <div class="li-icon"><i class="fa-solid fa-house"></i></div>
+                            <div class="text-sidebar">Home</div>
                         </a>                      
                     </li>
                     <li>
                         <a>
-                            <div class="li-icon">Icon</div>
-                            <div class="text-sidebar">Testo test</div>
+                            <div class="li-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div class="text-sidebar">Cerca</div>
                         </a>                      
                     </li>
                     <li>
                         <a>
-                            <div class="li-icon">Icon</div>
-                            <div class="text-sidebar">Testo test</div>
+                            <div class="li-icon"><i class="fa-solid fa-book"></i></div>
+                            <div class="text-sidebar">La tua libreria</div>
                         </a>                      
                     </li>
 
 
                 </ul>
             </div>
+
+            <!-- SIDEBAR MIDDLE -->
             <div class="playlist-container">
                 <div class="playlist">
-                    <h2></h2>
-                    <div>
-                        <button></button>
-                        <h3></h3>
+                    <h2>PLAYLIST</h2>
+                    <div class="playlist-button">
+                        <button><i class="fa-solid fa-plus"></i></button>
+                        <h3>Crea Playlist</h3>
                     </div>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3></h3>
+                    <h3>Nome Playlist</h3>
+                    <h3>Nome Playlist</h3>
+                    <h3>Nome Playlist</h3>
+                    <h3>Nome Playlist</h3>
+                    <h3>Nome Playlist</h3>
+                    <h3>Nome Playlist</h3>
+                    <h3>Nome Playlist</h3>
                 </div>
 
             </div>
+
+            <!-- SIDEBAR BOTTOM -->
             <div class="sidebar-container-bottom no-shrink">
-                <div class="text-sidebar">Testo test Sidebar</div>
+                <div class="mini-sidebar-container">
+                    <div class="icon-sidebar-bottom irregular-icon"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="text-sidebar">Installa app</div>
+                </div>
+                <hr>
+                <div class="mini-sidebar-container">
+                    <div class="icon-sidebar-bottom"><i class="fa-regular fa-user"></i></div>
+                    <div class="text-sidebar" style="color: white">John Doe</div>
+                </div>
             </div>
 
         </div>

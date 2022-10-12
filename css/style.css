@@ -2,7 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: .1px solid red;
+}
+
+:root {
+    --primary-col: rgb(163,163,163);
 }
 
 body {
@@ -10,6 +14,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: rgb(20,25,34);
+}
+
+.mini-sidebar-container {
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-navbar {
@@ -23,11 +33,17 @@ body {
 }
 
 .sidebar {
-    width: 100px;
+    width: 80px;
     /*Indicativo, da verificare*/
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    color: var(--primary-col);
+    background-color: black;
+}
+
+.sidebar h2 {
+    color: white;
 }
 
 .main-container {
@@ -43,12 +59,28 @@ body {
     flex-grow: 1;
 }
 
+.playlist-button {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.playlist-button h3 {
+    margin-left: 5px;
+}
+
+.playlist-button i {
+    font-size: 20px;
+    color: black;
+    background-color: var(--primary-col);
+}
+
 .logogrande-testo {
     display: flex;
 }
 
 .sidebar .playlist {
     display: none;
+    padding-left: 8px;
 }
 
 .lista-sidebar-top {
@@ -61,6 +93,10 @@ body {
     justify-content: center;
 }
 
+.logo-sidebar img {
+    width: 25px;
+}
+
 .logo-small {
     display: block
 }
@@ -71,4 +107,33 @@ body {
 
 .sidebar .text-sidebar {
     display: none;
+}
+
+.sidebar-container-bottom {
+    vertical-align: middle;
+    padding-left: .6rem;
+}
+
+.mini-sidebar-container {
+    align-items: center;
+}
+
+.mini-sidebar-container .text-sidebar {
+    margin-left: 10px;
+}
+
+.irregular-icon {
+    font-size: 10px
+}
+
+.circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+hr {
+    margin: 5px 0;
+    width: 90%;
 }
