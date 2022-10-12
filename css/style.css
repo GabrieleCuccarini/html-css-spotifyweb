@@ -24,6 +24,7 @@ body {
 
 .bottom-navbar {
     display: flex;
+    justify-content: space-between;
     height: 90px;
 }
 
@@ -145,6 +146,12 @@ hr {
 .footer-container-left {
     background-color: greenyellow;
     display: flex;
+    align-items: center;
+}
+
+.footer-container-middle {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
