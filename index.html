@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+</head>
+
+<body>
+
+    <div class="all-container">
+        <div class="sidebar">
+            <!-- width fissa e shrink 0, gli elementi interni
+                prendono shrink 0 per difendersi dalla playlist che ha grow 1
+                Le icone sono link. La struttura dovrebbe essere ul, li e in ogni-->
+            <div class="sidebar-container-top no-shrink">
+                <ul class="lista-sidebar-top">
+                    <li>
+                        <a class="logo-sidebar">
+                            <img class="logo-small" src="" alt="">
+                            <img class="logo-large" src="" alt="">
+                        </a>                      
+                    </li>
+                    <li>
+                        <a>
+                            <div class="li-icon">Icon</div>
+                            <div class="text-sidebar">Testo test</div>
+                        </a>                      
+                    </li>
+                    <li>
+                        <a>
+                            <div class="li-icon">Icon</div>
+                            <div class="text-sidebar">Testo test</div>
+                        </a>                      
+                    </li>
+                    <li>
+                        <a>
+                            <div class="li-icon">Icon</div>
+                            <div class="text-sidebar">Testo test</div>
+                        </a>                      
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist">
+                    <h2></h2>
+                    <div>
+                        <button></button>
+                        <h3></h3>
+                    </div>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                    <h3></h3>
+                </div>
+
+            </div>
+            <div class="sidebar-container-bottom no-shrink">
+                <div class="text-sidebar">Testo test Sidebar</div>
+            </div>
+
+        </div>
+
+        <main class="main-container in-overflow-auto">
+
+            <div class="barra-upgrade"></div>
+
+            <div class="container-sections">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="img-card-container">
+                                <img src="" alt="">
+                            <div class="text-card-container">
+                                <h3></h3>
+                                <h5></h5>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="bottom-navbar">
+        <!--flex space beetween e la centrale deve avere 
+            una max width percentuale. -->
+        <div class="footer-container shrink0">
+            <div class="corner-footer">
+                <div class="img-footer"></div>
+            </div>
+            <div class="corner-footer">
+                <div class="song-footer"></div>
+            </div>
+            <div class="corner-footer">
+                <div class="icon-footer"></div>
+            </div>
+
+        </div>
+        <div class="footer-container central flex+justifycenter shrink0">
+            <div class="play-container">
+                <button><i></i></button>
+                <button><i></i></button>
+                <button><i></i></button>
+                <button><i></i></button>
+                <button><i></i></button>
+            </div>
+            <div class="play-container">
+                <div class="play-bar"></div>
+                <div class="play-bar"></div>
+                <div class="play-bar"></div>
+            </div>
+        </div>
+        <div class="footer-container shrink0">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<!--Nella card l'img ha width 100% e la card ha altezza fissa
+IL BODY HA 100 VH
+La sidebar nella versione ridotta in media query perde tutti i testi e la barra "Playlist" intera. Le icone prendono stessa dimensione e centratura orizzontale
+Inoltre bisognerà dare effetto "Text sidebar display: none e icon width X"-->

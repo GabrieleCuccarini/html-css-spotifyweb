@@ -1,0 +1,42 @@
+/* Medium */
+@media screen and (min-width: 568px) {
+    .sidebar {
+        width: 260px;
+    }
+
+    .sidebar .playlist {
+        display: block;
+    }
+
+    .lista-sidebar-top a {
+        display: flex;
+        padding: .6rem;
+        justify-content: flex-start;
+    }
+
+    li .li-icon {
+        margin-right: .8rem;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-large {
+        display: block;
+    }
+
+    .sidebar .text-sidebar {
+        display: block;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Extra-Large*/
+@media screen and (min-width: 992px) {
+    
+}
