@@ -78,6 +78,11 @@
         flex-basis: calc(100% / 6 - 0.7rem);
     }
 
+    .row-category {
+        margin: 0 auto;
+        width: 80%;
+        justify-content: center;
+    }
     .col-category {
         flex-grow: 1;
         flex-basis: calc(100% / 6 - .3rem);
@@ -86,11 +91,5 @@
 
 /*EXTRA-LARGE*/
 @media screen and (min-width: 1200px) {
-
-    .row-category {
-        margin: 0 auto;
-        width: 60%;
-        justify-content: center;
-    }
 
 }

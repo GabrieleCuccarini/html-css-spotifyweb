@@ -17,6 +17,10 @@ body {
     background-color: rgb(20,25,34);
 }
 
+a {
+    text-decoration: none;
+}
+
 .mini-sidebar-container {
     display: flex;
     justify-content: center;
@@ -61,19 +65,28 @@ body {
     flex-grow: 1;
 }
 
-.playlist-button {
-    display: flex;
-    padding: 1rem 0;
+.titolo-butt {
+    font-size: 1.4rem;
 }
 
-.playlist-button h3 {
-    margin-left: 5px;
+.playlist-button {
+    display: flex;
+    vertical-align: middle;
 }
 
 .playlist-button i {
-    font-size: 20px;
+    font-size: 2rem;
     color: black;
     background-color: var(--primary-col);
+}
+
+.playlist a {
+    text-decoration: none;
+    color: var(--primary-col);
+}
+
+.playlist li {
+    margin-top: .8rem
 }
 
 .logogrande-testo {
@@ -90,6 +103,7 @@ body {
 }
 
 .lista-sidebar-top a {
+    color: var(--primary-col);
     display: flex;
     padding: .6rem;
     justify-content: center;
@@ -156,10 +170,13 @@ body {
     padding: 1rem 0;
     position: absolute;
     right: 85px;
-    color: white;
     background-color: var(--secondary-col);
     border-radius: 25px;
     border: 1px solid white;
+}
+
+.btn-upgrade a {
+    color: white;
 }
 
 .container-sections {
@@ -190,6 +207,10 @@ body {
     justify-content: center;
     column-gap: .2rem;
     row-gap: .5rem;
+}
+
+.row-category li {
+    list-style: none;
 }
 
 .col-category {
