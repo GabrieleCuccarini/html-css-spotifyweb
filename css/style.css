@@ -78,7 +78,9 @@ a {
     background-color: var(--primary-col);
 }
 
-.playlist a {
+.playlist a,
+.sidebar-container-bottom a,
+.corner-footer a {
     text-decoration: none;
     color: var(--primary-col);
 }
@@ -229,7 +231,9 @@ a {
     border: none;
 }
 
-.col-category a:hover hr {
+.col-category hr {
+    margin-top: 3px;
+    padding-top: 2px;
     background-color: rgb(173,255,47);
 }
 
@@ -323,7 +327,7 @@ a {
     padding-right: .5em;
 }
 
-.footer-container-right button {
+.footer-container-right .right-icons-container button {
     color: white;
     background-color:rgb(40,40,40);
     margin: 0 5px;
@@ -331,7 +335,7 @@ a {
     display: inline-block;
 }
 
-.footer-container-middle button  {
+.footer-container-middle .buttons-container button  {
     color: white;
     background-color:rgb(40,40,40);
     margin: 0 10px;
@@ -340,9 +344,9 @@ a {
     font-size: 15px;
 }
 
-
 .bars-container {
     position: relative;
+    display: flex;
 }
 
 .play-bar {
@@ -352,7 +356,6 @@ a {
 .grey-bar {
     width: 70px;
     height: .3rem;
-    overflow: hidden;
     border: none;
     background-color: var(--primary-col);
 }
@@ -364,9 +367,58 @@ a {
 .white-bar {
     width: 25%;
     height: .3rem;
-    overflow: hidden;
     border: none;
     background-color: white;
     position: absolute;
     top: 0;
+    left: 0;
+}
+
+.white-dot {
+    opacity: 0;
+    padding: 8px;
+    color: white;
+    position: absolute;
+    top: -8px;
+    left: 25%;
+    border-radius: 50%;
+}
+
+.smaller {
+    padding: 5px;
+    top: -5px;
+}
+
+/* HOVER EFFECTS */
+
+.btn-upgrade:hover {
+    transform: scale(1.2) translateX(-10px) translateY(10px);
+}
+
+.sidebar ul li:hover a,
+.sidebar-container-bottom .mini-sidebar-container:hover a {
+    color: white;
+}
+
+.sidebar ul .playlist-button:hover i{
+    background-color: white;
+}
+.corner-footer .brano-title a:hover{
+    color: white;
+}
+
+.corner-footer .icon-footer i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.bars-container .white-bar:hover + .white-dot {
+    opacity: 1;
+}
+.bars-container .white-bar:hover {
+    background-color: greenyellow;
+}
+
+.buttons-container button:hover {
+    transform: scale(1.3);
 }

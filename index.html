@@ -76,8 +76,10 @@
             <!-- SIDEBAR BOTTOM -->
             <div class="sidebar-container-bottom no-shrink">
                 <div class="mini-sidebar-container">
-                    <div><img src="./img/download.svg" style="width: 12px" alt=""></div>
-                    <div class="text-sidebar">Installa app</div>
+                        <a href="">
+                            <span><img src="./img/download.svg" style="width: 12px" alt=""></span>
+                            <span class="text-sidebar">Installa app</span>
+                        </a>
                 </div>
                 <hr>
                 <div class="mini-sidebar-container">
@@ -85,7 +87,6 @@
                     <div class="text-sidebar" style="color: white">John Doe</div>
                 </div>
             </div>
-
         </div>
 
         <!-- MAIN CONTAINER (LATO CENTRODESTRA) -->
@@ -111,31 +112,26 @@
                         <li class="col-category">
                             <a href="#">
                             <div class="text-category">PODCAST</div>
-                            <hr>
                             </a>
                         </li>
                         <li class="col-category">
                             <a href="#">
                             <div class="text-category">CLASSIFICHE</div>
-                            <hr>
                             </a>
                         </li>
                         <li class="col-category">
                             <a href="#">
                             <div class="text-category">GENERI E MOOD</div>
-                            <hr>
                             </a>
                         </li>
                         <li class="col-category">
                             <a href="#">
                             <div class="text-category">NUOVE USCITE</div>
-                            <hr>
                             </a>
                         </li>
                         <li class="col-category">
                             <a href="#">
                             <div class="text-category">SCOPRI</div>
-                            <hr>
                             </a>
                         </li>
                     </ul>
@@ -299,8 +295,8 @@
                     <div class="song-footer">
                         <h4 style="color: white">Sinister</h4>
                         <div class="brano-title">
-                            <h6>Brano</h6>
-                            <h6>Nome</h6>
+                            <a href="#"><h6>Brano</h6></a>
+                            <a href="#"><h6>Nome</h6></a>
                         </div>
                     </div>
                 </div>
@@ -324,8 +320,9 @@
                     <div class="numbers">0:25</div>
                     <div class="play-bar">
                         <div class="bars-container">
-                            <hr class="grey-bar longer">
-                            <hr class="white-bar"> 
+                            <button class="grey-bar longer"></button>
+                            <button class="white-bar"></button>
+                            <button class="white-dot"></button>                  
                         </div>
                     </div>
                     <div class="numbers">4:35</div>
@@ -334,12 +331,15 @@
 
             <!-- RIGHT FOOTER -->
             <div class="footer-container-right">
-                <button><i class="fa-solid fa-list"></i></button>
-                <button><i class="fa-solid fa-display"></i></button>
-                <button><i class="fa-solid fa-volume-high"></i></button>
+                <div class="right-icons-container">
+                    <button><i class="fa-solid fa-list"></i></button>
+                    <button><i class="fa-solid fa-display"></i></button>
+                    <button><i class="fa-solid fa-volume-high"></i></button>
+                </div>
                 <div class="bars-container">
-                    <hr class="grey-bar">
-                    <hr class="white-bar"> 
+                    <button class="grey-bar"></button>
+                    <button class="white-bar"></button>
+                    <button class="white-dot smaller"></button>
                 </div>
             </div>  
         </div>
