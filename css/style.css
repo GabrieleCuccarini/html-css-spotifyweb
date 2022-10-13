@@ -172,11 +172,15 @@ hr {
     color: white;
 }
 
+.container-sections .mid-title {
+    margin-top: 30px;
+}
+
 .container-sections h5 {
+    margin-top: 7px;
     font-size: .9rem;
     color: var(--primary-col);
 }
-
 
 .row-category {
     display: flex;
@@ -191,6 +195,25 @@ hr {
     font-size: .9rem;
     color: var(--primary-col);
     flex-basis: calc(100% / 4 - .8rem);
+}
+
+.blocco-mid .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .col {
+    flex-basis: 50%;
+    flex-shrink: 1;
+}
+
+.img-card-container {
+    display: block;
+    width: 100%;
+}
+
+.col .card {
+    text-align: center;
 }
 
 /* SOPRA QUESTO COMMENTO METTERE LE CARATTERISTICHE DEL MAIN */
