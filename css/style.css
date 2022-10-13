@@ -7,6 +7,7 @@
 
 :root {
     --primary-col: rgb(163,163,163);
+    --secondary-col: rgb(8,11,18);
 }
 
 body {
@@ -147,7 +148,7 @@ hr {
     display: flex;
     height: 65px;
     position: fixed;
-    background-color: rgb(8,11,18);
+    background-color: var(--secondary-col);
 }
 
 .btn-upgrade {
@@ -156,7 +157,7 @@ hr {
     position: absolute;
     right: 85px;
     color: white;
-    background-color: rgb(8,11,18);
+    background-color: var(--secondary-col);
     border-radius: 25px;
     border: 1px solid white;
 }
@@ -164,6 +165,16 @@ hr {
 .container-sections {
     margin-top: 80px;
     background-color: rgb(20,25,34);
+}
+
+.container-sections h2 {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.container-sections h5 {
+    font-size: .9rem;
+    color: var(--primary-col);
 }
 
 
