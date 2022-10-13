@@ -52,8 +52,8 @@
     padding-left: 0.6rem;
     }
 
-    hr {
-        opacity: 0;
+    .sidebar hr {
+        opacity: 1;
     }
     
 }
@@ -65,19 +65,26 @@
         flex-basis: calc(100% / 5 - .3rem);
     }
 
+    .row .col {
+        flex-basis: calc(25% - 0.7rem);
+    }
+
 }
 
 /*LARGE*/
 @media screen and (min-width: 992px) {
 
-    
+    .row .col {
+        flex-basis: calc(100% / 6 - 0.7rem);
+    }
+
     .col-category {
         flex-grow: 1;
         flex-basis: calc(100% / 6 - .3rem);
     }
 }
 
-/*EXSTRA-LARGE*/
+/*EXTRA-LARGE*/
 @media screen and (min-width: 1200px) {
 
     .row-category {

@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: .01px solid red;
 }
 
 :root {
@@ -131,16 +130,17 @@ body {
     margin-left: 10px;
 }
 
-.circle {
+/* .circle {
     border-radius: 50%;
     width: 20px;
     height: 20px;
     padding: 10px;
-}
+} */
 
-hr {
+.sidebar hr {
     margin: 5px 0;
-    width: 90%;
+    width: 70%;
+    opacity: 0;
 }
 
 .barra-upgrade {
@@ -163,11 +163,13 @@ hr {
 }
 
 .container-sections {
+    overflow: auto;
     margin-top: 80px;
     background-color: rgb(20,25,34);
 }
 
 .container-sections h2 {
+    margin-top: .7rem;
     font-size: 1.1rem;
     color: white;
 }
@@ -193,26 +195,43 @@ hr {
 .col-category {
     text-align: center;
     font-size: .9rem;
-    color: var(--primary-col);
     flex-basis: calc(100% / 4 - .8rem);
 }
 
+.text-category {
+    color: var(--primary-col);
+}
+
+.col-category hr {
+    background-color: rgb(20,25,34);
+    margin: 0 auto;
+    width: 25%;
+    height: 1px;
+    border: none;
+}
+
+.col-category:hover hr {
+    background-color: rgb(173,255,47);
+}
+
 .blocco-mid .row {
+    column-gap: .7rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .row .col {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 0.7rem);
     flex-shrink: 1;
 }
 
-.img-card-container {
+.img-card-container img {
     display: block;
     width: 100%;
 }
 
 .col .card {
+    margin: .6rem 0;
     text-align: center;
 }
 
