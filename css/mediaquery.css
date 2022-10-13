@@ -55,7 +55,11 @@
     .sidebar hr {
         opacity: 1;
     }
-    
+
+    .brano-title {
+        display: flex;
+        column-gap: 3px;
+    }  
 }
 
 /*MEDIUM*/

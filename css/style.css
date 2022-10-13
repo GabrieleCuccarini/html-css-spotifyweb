@@ -27,10 +27,8 @@ a {
 }
 
 .bottom-navbar {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     height: 90px;
-    background-color: rgb(40,40,40);
 }
 
 .all-container {
@@ -231,7 +229,7 @@ a {
     border: none;
 }
 
-.col-category:hover hr {
+.col-category a:hover hr {
     background-color: rgb(173,255,47);
 }
 
@@ -257,11 +255,45 @@ a {
 }
 
 /* SOPRA QUESTO COMMENTO METTERE LE CARATTERISTICHE DEL MAIN */
+.bottom-fix {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40,40,40);
+}
+
+.bottom-fix > * {
+    border: 0.1px red dashed;
+}
 
 .footer-container-left {
-    background-color: greenyellow;
     display: flex;
     align-items: center;
+}
+
+.footer-container-left .icon-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container-left .icon-footer i {
+    margin: 3px 0;
+}
+
+.footer-container-left .img-footer img {
+    width: 3rem;
+}
+
+.footer-container-left > * {
+    padding: 0 .5rem;
+    color: var(--primary-col);
+}
+
+.brano-title {
+    display: block
 }
 
 .footer-container-middle {
@@ -270,11 +302,39 @@ a {
     align-items: center;
 }
 
-.icon-footer {
+.footer-container-right {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.img-footer img {
-    width: 2rem;
+.footer-container-right button {
+    color: white;
+    background-color:rgb(40,40,40);
+    margin: 0 5px;
+    border: none;
+    display: inline-block;
+}
+
+.bars-container {
+    position: relative;
+}
+
+.grey-bar {
+    width: 100px;
+    height: .3rem;
+    overflow: hidden;
+    border: none;
+    border-radius: 25%;
+    background-color: var(--primary-col);
+}
+
+.white-bar {
+    width: 35%;
+    height: .3rem;
+    overflow: hidden;
+    border: none;
+    border-radius: 25%;
+    background-color: white;
+    position: absolute;
+    top: 0;
 }
