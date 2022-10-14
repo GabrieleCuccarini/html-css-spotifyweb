@@ -399,7 +399,7 @@ a {
     top: -5px;
 }
 
-/* HOVER EFFECTS */
+/* BONUS 3-4 HOVER EFFECTS */
 
 .btn-upgrade:hover {
     transform: scale(1.2) translateX(-10px) translateY(10px);
@@ -441,12 +441,10 @@ a {
     display: block;
 }
 
-/* BONUS */
-
 /* BONUS 2*/
 .row-category .col-category:hover {
     background-color: lightskyblue;
     transform: scale(1.2);
 }
 
-/* BONUS 5*/
+/* BONUS 7*/
