@@ -20,6 +20,10 @@ BONUS 7*/
     .bottom-fix {
         height: 65px;
     }
+
+    .sidebar {
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 568px) {

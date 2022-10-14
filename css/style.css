@@ -132,6 +132,7 @@ a {
     flex-direction: column;
     justify-content: center;
     padding-left: .6rem;
+    margin-top: 1rem;
 }
 
 .mini-sidebar-container {
