@@ -439,3 +439,13 @@ a {
 .card .img-card-container:hover i {
     display: block;
 }
+
+/* BONUS */
+
+/* BONUS 2*/
+.row-category .col-category:hover {
+    background-color: lightskyblue;
+    transform: scale(1.2);
+}
+
+/* BONUS 5*/

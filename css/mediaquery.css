@@ -1,4 +1,27 @@
-/* SMALL*/
+/* EXTRA SMALL
+BONUS 7*/
+@media screen and (max-width:500px) {
+    .footer-container-right .bars-container {
+        display: none;
+    }
+
+    .btn-upgrade {
+        padding: .6rem 0;
+    }
+
+    .barra-upgrade {
+        height: 50px;
+    }
+
+    .bottom-navbar {
+        height: 65px;
+    }
+
+    .bottom-fix {
+        height: 65px;
+    }
+}
+
 @media screen and (min-width: 568px) {
     .sidebar {
         width: 200px;
